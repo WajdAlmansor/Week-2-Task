@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_sgc40"]
 [ext_resource type="PackedScene" uid="uid://23yjnlx5cg5c" path="res://Scenes/obstacle.tscn" id="2_kerue"]
 [ext_resource type="PackedScene" uid="uid://dqpcxvrqpirx8" path="res://Scenes/door.tscn" id="3_e1m5k"]
-[ext_resource type="PackedScene" uid="uid://byobex6v0capf" path="res://Scenes/level_2.tscn" id="4_h06fy"]
+[ext_resource type="PackedScene" uid="uid://cygmbuqmdpb57" path="res://area_2d.tscn" id="4_hdb36"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iijt6"]
 
@@ -34,4 +34,5 @@ position = Vector2(993, 358)
 
 [node name="Door" parent="." instance=ExtResource("3_e1m5k")]
 position = Vector2(962, 287)
-next_scene = ExtResource("4_h06fy")
+
+[node name="Area2D" parent="." instance=ExtResource("4_hdb36")]
